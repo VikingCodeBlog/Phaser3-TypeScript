@@ -80,3 +80,13 @@ Your scenes.
 
 ### src/scripts
 Scripts that you can use in multiple scenes.
+
+## How to use Phaser types?
+Phaser provides us with some types inside the Phaser.Types object, you can use it as a TypeScript Objects.
+
+![image](https://user-images.githubusercontent.com/59940005/129427017-c2261827-3aaf-489d-b02e-c87d78b2230d.png)
+
+It seems like a hard work, but calm, your IDE will help you.
+
+![image](https://user-images.githubusercontent.com/59940005/129427039-4b62e909-f4ec-4d8f-b0b5-726396807bd9.png)
+
