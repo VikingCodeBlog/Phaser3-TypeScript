@@ -18,6 +18,7 @@ export class HomeScene extends Phaser.Scene {
   create(): void {
     // TODO
   }
+
   update(): void {
     // TODO
   }
