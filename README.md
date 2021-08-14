@@ -1,7 +1,7 @@
 # Phaser 3 + Webpack + TypeScript (template)
 This is a template for developing videogames with the Phaser 3 library and TypeScript.
 
-[![current](https://img.shields.io/badge/Current-1.0.0-<COLOR>.svg)](https://github.com/VikingCodeBlog/Phaser3-TypeScript/blob/main/package.json)
+[![current](https://img.shields.io/badge/Current-1.1.0-green.svg)](https://github.com/VikingCodeBlog/Phaser3-TypeScript/blob/main/package.json)
 [![TypeScript](https://img.shields.io/badge/TypeScript-4.3.5-blue.svg)](https://www.typescriptlang.org/)
 [![Phaser](https://img.shields.io/badge/Phaser-3.55.2-orange.svg)](https://phaser.io/)
 [![WebPack](https://img.shields.io/badge/WebPack-5.50.0-blue.svg)](https://webpack.js.org/)
