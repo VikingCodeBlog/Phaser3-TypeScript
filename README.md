@@ -34,6 +34,10 @@ This is an empty game 😥 time to work 💪
 
 ![image](https://user-images.githubusercontent.com/59940005/129426602-6a935e63-2042-450e-9ad5-82be09d98afd.png)
 
+## Start production mode
+```bash
+npm run pro
+```
 
 ## Lint
 ```bash
@@ -90,3 +94,40 @@ It seems like a hard work, but calm, your IDE will help you.
 
 ![image](https://user-images.githubusercontent.com/59940005/129427039-4b62e909-f4ec-4d8f-b0b5-726396807bd9.png)
 
+## How to use enviroment variables?
+
+### Create variables
+Add properties to enviroment in src/enviroments/enviroment{your enviroment}.ts
+```ts
+export const environment = {
+  env: 'dev',
+  title: 'Wellcome to Phaser',
+  newProperty: 'im a property :)'
+};
+```
+
+### Use variables
+You always have to import the same environment file, environment/enviroment.ts, webpack will change this file to the environment you are in.
+
+```ts
+import { environment } from '../enviroments/enviroment';
+
+// ...
+
+create(): void {
+    // TODO
+    this.add.text(260, 280, `${environment.title} - ${environment.env}`);
+}
+```
+
+### Use enviroments
+There are different scripts in package.json, these make use of ENV_TARGET to indicate the environment they are going to use.
+
+```json
+  "scripts": {
+    "build": "webpack --env ENV_TARGET=pro",
+    "start": "webpack serve --mode development --env ENV_TARGET=dev",
+    "pro": "webpack serve --env ENV_TARGET=pro",
+    "lint": "eslint . --ext .ts"
+  },
+```

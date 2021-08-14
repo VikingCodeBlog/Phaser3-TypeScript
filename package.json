@@ -1,6 +1,6 @@
 {
   "name": "tsphaser",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Typescript phaser game",
   "main": "index.js",
   "dependencies": {
@@ -20,8 +20,9 @@
     "webpack-dev-server": "3.11.2"
   },
   "scripts": {
-    "build": "webpack",
-    "start": "webpack serve",
+    "build": "webpack --env ENV_TARGET=pro",
+    "start": "webpack serve --mode development --env ENV_TARGET=dev",
+    "pro": "webpack serve --env ENV_TARGET=pro",
     "lint": "eslint . --ext .ts"
   },
   "author": "",
