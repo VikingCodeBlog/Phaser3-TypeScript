@@ -16,6 +16,11 @@ You can use this as a template.
 Node
 https://nodejs.org
 
+## Recommended
+Install ESLINT and Prettier plugins in your IDE.
+https://eslint.org/
+https://prettier.io/
+
 ## Install
 
 ```bash
