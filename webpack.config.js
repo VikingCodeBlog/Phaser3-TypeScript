@@ -1,3 +1,4 @@
+const CopyPlugin = require('copy-webpack-plugin');
 const webpack = require('webpack');
 const path = require('path');
 
@@ -39,6 +40,11 @@ module.exports = function (env) {
           'enviroments/enviroment',
           `enviroments/enviroment${appTarget == 'dev' ? '' : '.' + appTarget}`
         );
+      }),
+      new CopyPlugin({
+        patterns: [
+          { from: path.resolve(__dirname, 'src/assets'), to: path.resolve(__dirname, 'dist/assets') }
+        ]
       })
     ]
   };
