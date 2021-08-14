@@ -32,7 +32,7 @@ Now, you can see your game at http://localhost:9000/
 
 This is an empty game 😥 time to work 💪
 
-![image](https://user-images.githubusercontent.com/59940005/129426602-6a935e63-2042-450e-9ad5-82be09d98afd.png)
+![image](https://user-images.githubusercontent.com/59940005/129447224-5614e625-79ae-41e1-9653-4acec4230862.png)
 
 ## Start production mode
 ```bash
